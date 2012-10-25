@@ -1,24 +1,23 @@
 CakePHP Captcha Library
 ==========================
 
-CakePHP 2.1 :Put the "captcha" folder on path-to-cakephp-2.0/vendors/ – on root vendors folder. Use following
+CakePHP 2.1 :Put the "captcha" folder on path-to-cakephp-2.0/vendors/ on root vendors folder. Use following
 
     App::import('Vendor', 'captcha/captcha');
 
 Since CakePHP 2.1 the Pages Controller is no longer part of the core but ships in the app folder. So my advice would be create UsersController and put the captcha_image() on that controller and and use the function on view
     
-$this->Html->url('/users/captcha_image');.
+    $this->Html->url('/users/captcha_image');.
 
-CakePHP 2.0 :Put the “captcha” folder on path-to-cakephp-2.0/app/vendors/  on App’s vendors folder. Use following
-
-    App::import('Vendor', 'captcha/captcha');
-
-CakePHP 1.3 :Put the “captcha” folder on path-to-cakephp-1.3/vendors/ on the root vendors folder.
+CakePHP 2.0 :Put the "captcha" folder on path-to-cakephp-2.0/app/vendors/ on App's vendors folder. Use following
 
     App::import('Vendor', 'captcha/captcha');
 
-CakePHP 1.2 :This post and code is for CakePHP 1.2 and CakePHP 1.3. For CakePHP 1.3 put the "captcha" folder on path-to-cakephp-1.3/vendors/ –
-on the root vendors folder.
+CakePHP 1.3 :Put the "captcha" folder on path-to-cakephp-1.3/vendors/ on the root vendors folder.
+
+    App::import('Vendor', 'captcha/captcha');
+
+CakePHP 1.2 :This post and code is for CakePHP 1.2 and CakePHP 1.3. For CakePHP 1.3 put the "captcha" folder on path-to-cakephp-1.3/vendors/ on the root vendors folder.
 
 Now we implement it on our site. to do that we have to add a function the controller or we can add it to our pages controller.
 
